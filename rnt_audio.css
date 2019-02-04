@@ -15,6 +15,7 @@
 
 /* Audio Styles */
 
+/* The rule is for the audio clips and the style is going to make the elements render as block, the clips will have a shadow of dark grey, the margins will move the clips left. */
 audio {
     display: block;
     box-shadow: darkgrey 8px 8px 15px;
@@ -22,8 +23,7 @@ audio {
     width: 80%;
 }
 
+/* The rule will make the clips render as a blue background on the clips. */
 audio::-webkit-media-controls-panel {
     background: rgb(128, 128, 255);
 }
-
-/* box-shadow: none|h-offset v-offset blur spread color |inset|initial|inherit; */

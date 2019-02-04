@@ -17,7 +17,7 @@
 
     <meta charset="utf-8" />
     <title>Roads not Taken: The Poetry of Robert Frost</title>
-
+    <!-- Called in the audio css file to render the page with the styles. -->
     <link href="rnt_base.css" rel="stylesheet" />
     <link href="rnt_styles.css" rel="stylesheet" />
     <link rel="stylesheet" href="rnt_audio.css" />
@@ -37,7 +37,7 @@
     </header>
 
     <figure>
-
+        <!-- Added the new youtube video link, the old link for the vide clip did not work, caused issues for web page. -->
         <iframe src="https://www.youtube.com/embed/ie2Mspukx14" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen></iframe>
 
@@ -74,12 +74,14 @@
 
         <section class="poem">
             <h2>Fire and Ice</h2>
+            <!-- The element audio have the controls on, there are two sources with mp3 and ogg files. There are different types of files to make sure that if the browser doesnt support one file type it see if the second one is cabatible. -->
             <audio controls>
                 <source src="rnt_fireice.mp3" type="Audio/mp3" />
                 <source src="rnt_fireice.ogg" type="Audio/ogg" />
-
+                <!-- This embed element is for emergency use. If the sources dont work the embed is used.  -->
                 <embed src="rnt_fireice.mp3" type="audio/mp3" width="250px" height="50px" controller autoplay
                     showcontrols autostart>
+                <!-- The paragraph will only show up if none of the abpve sources work, and the page will render the message that is in the paragraph tags. -->
                 <p>Browser does not support either HTML5 audio or embedded players</p>
             </audio>
             <p>
@@ -97,12 +99,14 @@
 
         <section class="poem">
             <h2>Devotion</h2>
+            <!-- The element audio have the controls on, there are two sources with mp3 and ogg files. There are different types of files to make sure that if the browser doesnt support one file type it see if the second one is cabatible. -->
             <audio controls>
                 <source src="rnt_devotion.mp3" type="Audio/mp3" />
                 <source src="rnt_devotion.mp3" type="Audio/ogg" />
-
+                <!-- This embed element is for emergency use. If the sources dont work the embed is used.  -->
                 <embed src="rnt_devotion.mp3" type="audio/mp3" width="250px" height="50px" controller autoplay
                     showcontrols autostart>
+                <!-- The paragraph will only show up if none of the abpve sources work, and the page will render the message that is in the paragraph tags. -->
                 <p>Browser does not support either HTML5 audio or embedded players</p>
             </audio>
             <p>
